@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-pie.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="sliderContainer">
+            <h4 style=text-align:center;color:#314467;margin-bottom:55px>EMI Calculator</h4>
+                <div>
+                    <div style="margin-bottom: 35px !important;"> 
+                        <h5 class="header_title">LOAN AMOUNT</h5>
+                        <div>
+                            <input id="loanAmtTextfld" class="textFieldCls" type="number" value="3000000">
+                            <input id="loanAmtSlider" class="sliderCls" type="range" min="0" max="50000000" value="3000000" onclick="updateTextfield('loanAmtSlider','loanAmtTextfld')">
+                            <p class=minMaxValuesCls>0 <span style=float:right>5Cr</span></p>
+                        </div>
+                    </div>
+                    <div> 
+                        <h5 class="header_title">INTEREST RATE</h5>
+                        <div>
+                            <input id="interestRateTextfld" class="textFieldCls" type="number" value="9">
+                            <input id="interestRateSlider" class="sliderCls" type="range" min="0" max="15" value="9" onclick="updateTextfield('interestRateSlider','interestRateTextfld')">
+                            <p class=minMaxValuesCls>0 <span style=float:right>15%</span></p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 35px !important;"> 
+                        <h5 class="header_title">LOAN TERM(Years)</h5>
+                        <div>
+                            <input id="loanTermTextfld" class="textFieldCls" type="number" value="25">
+                            <input id="loaTermSlider" class="sliderCls" type="range" min="0" max="30" value="25" onclick="updateTextfield('loaTermSlider','loanTermTextfld')">
+                            <p class=minMaxValuesCls>0 <span style=float:right>30 Year</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="chartContainer" class="chartCls"></div>
+                <div class="chartBottomValues">
+                    <span style="font-size:21px">₹<input readonly id="emiValue" name="currency" type="number" value="25176" style="width: 60px !important;font-size:20px;width: 90px !important;border:none;padding-top: 5px;color:#314467"></span>
+                    <span style="font-size:21px">₹<input readonly id="principalAmt" type="number" value="3000000" class= "bottomValuesCls" style="width:100px !important"></span>
+                    <span style="font-size:21px">₹<input readonly id="interestAmt" type="number" value="4552767" style="width: 90px !important;" class= "bottomValuesCls"></span>
+                </div> 
+        </div>
+    </body>
+</html>
+

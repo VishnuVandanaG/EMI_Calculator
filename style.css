@@ -1,0 +1,114 @@
+.sliderContainer {
+    border-style:ridge !important;
+    border-radius: 10px !important;
+    height:400px !important;
+    width:1100px !important;
+    float: left;
+}
+.sliderAndChartPanel{
+    float:left !important;
+    padding: 0 10px !important;
+}
+.chartPanel{
+    margin-top: -50px !important;
+    float: right !important;
+    margin-left:1100px !important;
+}
+.header_title{
+    font-size:14px !important;
+    font-weight:100;
+    font-family: Poppins;
+    color:#9f9f9f !important;
+    padding-left: 15px !important;
+    margin-bottom:-20px !important;
+}
+.sliderCls{
+    margin-left: 15px !important;
+    width:50% !important;
+    display:block !important;
+}
+.textFieldCls{
+    font-size:16px;
+    color:#314467;
+    border: 1.5px solid #ccc;
+    height:23px;
+    margin-left:395px !important;
+    border-radius: 20px !important;
+    border-width: thin !important;
+    display:block !important;
+}
+.minMaxValuesCls{
+    padding-left: 20px !important;
+    margin-top: -5px !important;
+    width: 49% !important;
+    color:#9f9f9f !important;
+}
+.chartBottomValues{
+    float: right;
+    margin-right:-400px !important;
+    margin-top:3px !important;
+}
+.bottomValuesCls{
+    font-size: 20px;
+    border:none;
+    padding-top: 5px;
+}
+.chartCls{
+    height: 67%;
+    width:37%;
+    display: block !important;
+    float: right;
+    margin-top: -260px;
+    margin-right: 80px;
+}
+.anychart-credits-logo{
+    display:none;
+}
+.anychart-credits-text{
+    display:none;
+}
+/*CSS to remove border for bottom fileds.*/
+#loanAmtTextfld:focus {
+    outline:none !important;
+}
+#interestRateTextfld:focus {
+    outline:none !important;
+}
+#loanTermTextfld:focus {
+    outline:none !important;
+}
+/*CSS to remove border for bottom fileds.*/
+#emiValue:focus{
+    border: none;
+    outline:none;
+}
+#emiValue:active{
+    border: none;
+    outline:none;
+}
+#principalAmt:focus{
+    border: none;
+    outline:none;
+}
+#principalAmt:active{
+    border: none;
+    outline:none;
+}#interestAmt:focus{
+    border: none;
+    outline:none;
+}
+#interestAmt:active{
+    border: none;
+    outline:none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield !important;
+}
